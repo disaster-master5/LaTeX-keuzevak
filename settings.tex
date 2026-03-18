@@ -1,0 +1,580 @@
+%!TEX root = main.tex
+    \documentclass[
+        12pt,
+        oneside,
+        titlepage,
+        final,
+        fleqn,
+    ]{\myClass}
+\usepackage[
+        papersize={166.5mm,222mm}, %trail on error zodat er net zoveel tekst op een regel past als bij A4 versie
+        top=14mm,
+        head=10mm,
+        headsep=5mm,
+        bottom=15mm,
+        footskip=11.7mm,
+        left=10mm,
+        right=10mm,
+        twoside=false
+    ]{geometry}
+
+\usepackage{etoolbox}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{setspace}
+\usepackage{mathptmx}
+\usepackage[scaled=.92]{helvet}
+\usepackage{charter}
+\usepackage[charter]{mathdesign} 
+\usepackage[scaled]{berasans} %ifcharacter
+\usepackage{cmbright}
+\usepackage[default,scale=0.95]{opensans}
+\usepackage[varqu]{zi4}
+\usepackage[hyphens]{url}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{expl3}
+\usepackage{xstring}
+
+\newtoggle{onesided}
+\ifdef{\forceOneSided}{\toggletrue{onesided}}{\togglefalse{onesided}}
+
+\ifdef{\titel}{}{\newcommand{\titel}{}}
+\ifdef{\auteurs}{}{\newcommand{\auteurs}{}}
+\ifdef{\documenttype}{}{\newcommand{\documenttype}{}}
+
+\setlength{\jot}{\baselineskip}
+%>extramathcommands
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\est}[1]{\widehat{#1}}
+\newcommand{\trans}[1]{{#1}^\mathrm{T}}
+
+\newcommand{\sectionfont}{\sffamily\bfseries}
+\newcommand{\headerfont}{\sffamily\small}
+\newcommand{\footerfont}{\sffamily\small}
+\newcommand{\captionfont}{sf,small}
+
+
+\makeatletter
+\expandafter\ifstrequal\expandafter{\myClass}{book}{
+    \let\old@frontmatter\frontmatter
+    \renewcommand{\frontmatter}{
+        \old@frontmatter
+            \pagenumbering{roman}
+    }
+    \let\old@mainmatter\mainmatter
+    \renewcommand{\mainmatter}{
+            \old@mainmatter
+    }
+}{}
+\makeatother
+
+\usepackage[table]{xcolor}
+%main kleuren
+\definecolor{purple}{HTML}{8139c0}
+%secundaire kleuren
+\definecolor{darkblue}{HTML}{003340}
+\definecolor{lightpurple}{HTML}{eee4f7}
+\definecolor{white}{HTML}{ffffff}
+\definecolor{darkpurple}{HTML}{3c1b59}
+%accentkleuren
+\definecolor{yellow}{HTML}{fcc200}
+\definecolor{green}{HTML}{3ab7b0}
+\definecolor{blue}{HTML}{00b0eb}
+
+%\usepackage{hyperref}
+%\usepackage{cleveref}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, arrows.meta, positioning, fadings, shadows}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepackage[american, european resistors, cute inductor, siunitx, nooldvoltagedirection]{circuitikz}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multirow}
+
+\setlength{\parindent}{0 pt}
+
+\pagestyle{empty}
+
+%maken van een titelpagina
+
+%versiebeheer
+\newcommand{\versiehistorieheader}{%
+	\arrayrulecolor{purple}\hline
+	\rowcolor{purple} 
+	\multicolumn{1}{c}{\textcolor{white}{\textbf{Datum}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{Versie}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{Omschrijving}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{Auteur}}}
+	\\ \hline
+}
+\newcommand{\versiehistorie}[1]{
+	\section*{Versiehistorie}
+	{\renewcommand{\arraystretch}{1.24}%
+	\vspace*{.1\baselineskip}%
+	\begin{xltabular}{\textwidth}{|cc>{\raggedright\arraybackslash}Xc|}
+		\versiehistorieheader
+		\endfirsthead
+		\multicolumn{4}{l}{\hspace*{-\tabcolsep}\sffamily\small\ Vervolg~van~de~vorige~pagina.}\\ \hline
+		\versiehistorieheader
+		\endhead
+		\multicolumn{4}{r}{\sffamily\small Wordt~vervolgd~op~de~volgende~pagina.\hspace*{-\tabcolsep}}\\
+		\endfoot
+		\hline
+		\endlastfoot
+		#1%
+	\end{xltabular}
+	\addtocounter{table}{-1}%
+	}\vspace{-.45\baselineskip}%
+}
+
+%figuur instellingen
+% iets meer ruimte boven en iets minder onder figuur:
+\makeatletter
+\newenvironment{myFigure}[1][!htbp]{%
+	\expandafter\figure\expandafter[#1]%
+    \expandafter\ifstrequal\expandafter{#1}{H}{%
+        \vspace{.2\baselineskip}%
+    }{%
+		\vspace{.3\baselineskip}%
+    }%
+	\def\end@fig@space{%
+        \expandafter\ifstrequal\expandafter{#1}{H}{%
+            \vspace{-.85\baselineskip}%
+        }{%
+            \vspace{-.2\baselineskip}%
+        }%
+    }%
+}{%
+    \end@fig@space{}%
+	\endfigure%
+}
+\makeatother
+
+%Circuit instellingen
+% iets meer ruimte boven en iets minder onder figuur:
+\makeatletter
+\newenvironment{myCircuit}[1][!htbp]{%
+	\expandafter\circuit\expandafter[#1]%
+    \expandafter\ifstrequal\expandafter{#1}{H}{%
+        \vspace{.2\baselineskip}%
+    }{%
+		\vspace{.3\baselineskip}%
+    }%
+	\def\end@fig@space{%
+        \expandafter\ifstrequal\expandafter{#1}{H}{%
+            \vspace{-.85\baselineskip}%
+        }{%
+            \vspace{-.2\baselineskip}%
+        }%
+    }%
+}{%
+    \end@fig@space{}%
+	\endcircuit%
+}
+\makeatother
+
+%%>tabel instellingen
+% iets meer ruimte boven en iets minder onder tabel:
+\makeatletter
+\newenvironment{myTable}[1][!htbp]{%
+    \begin{table}[#1]%
+    \expandafter\ifstrequal\expandafter{#1}{H}{%
+	    \vspace{.1\baselineskip}%
+	}{%
+    	\vspace{.2\baselineskip}%
+	}%
+    \def\end@table@space{%
+        \expandafter\ifstrequal\expandafter{#1}{H}{%
+            \vspace{-.6\baselineskip}%
+        }{%
+            \vspace{.1\baselineskip}%
+        }%
+    }%
+}{%
+    \end@table@space{}%
+    \end{table}%
+}
+\makeatother
+
+%>figuur
+% commando voor figuur
+% figuren staan in directory ./figs
+% #1 OPTIONEEL = placement argumenten voor figure b.v. tb of H 
+% #2 = width of scale optie voor \includegraphics
+% #3 = filenaam (zonder extensie); labelnaam=fig:filenaam
+% #4 = titel
+\newcommand{\figuur}[4][!htbp]{
+    \begin{myFigure}[#1]
+        \centering%
+        \includegraphics[#2]{figs/#3}
+        \caption{#4}
+        \label{fig:#3}
+    \end{myFigure}
+}
+%<figuur
+
+%>tikzfiguur
+% commando voor figuur getekend met tikz
+% figuren staan in directory ./tikz
+% #1 OPTIONEEL = placement argumenten voor figure b.v. tb of H 
+% #2 = filenaam (zonder extensie); labelnaam=fig:filenaam
+% #3 = titel
+\newcommand{\tikzfiguur}[3][!htbp]{%
+	\begin{myFigure}[#1]%
+		\centering%
+		\input{tikz/#2}%
+		\caption{#3}%
+		\label{fig:#2}%
+	\end{myFigure}%
+}
+%<tikzfiguur
+
+%>tikzinlinefiguur
+% commando voor figuur getekend met tikz
+% figuren staan inline
+% #1 OPTIONEEL = placement argumenten voor figure b.v. tb of H 
+% #2 = label
+% #3 = TikZ-code
+% #4 = titel
+\newcommand{\tikzinlinefiguur}[4][H]{
+	\begin{myFigure}[#1]%
+		\centering%
+		\begin{tikzpicture}%
+		#3%
+		\end{tikzpicture}%
+		\caption{#4}%
+		\label{fig:#2}%
+	\end{myFigure}
+}
+%<tikzinlinefiguur
+
+%>schakeling
+% commando voor schakeling
+% #1 OPTIONEEL = placement argumenten voor figure b.v. tb of H 
+% #2 = circuittikz code
+% #3 = titel
+% #4 = labelnaam=sch:#4
+% spacing voor en na schakeling consistent gemaakt met figuur
+\newcommand{\schakeling}[4][!htbp]{
+	\begin{myCircuit}[#1]%
+        \centering%
+		\begin{circuitikz}%
+			#2%
+		\end{circuitikz}%	
+		\caption{#3}%
+		\label{sch:#4}%
+	\end{myCircuit}%
+}
+\makeatother
+%<schakeling
+
+\usepackage{tabularx}
+\usepackage{xltabular}
+
+\newcommand{\USE}[1]{\foreignlanguage{USenglish}{#1}}
+\newcommand{\hyp}{-\penalty0\hskip0pt\relax}
+
+\newcommand{\csecref}[1]{%
+    \cref{#1}%
+    \iftoggle{ebook}{}{
+        op \cpageref{#1}%
+    }%
+}
+
+\newcommand{\Csecref}[1]{%
+    \Cref{#1}%
+    \iftoggle{ebook}{}{
+        op \cpageref{#1}%
+    }%
+}
+
+%>pdfpagref
+% verwijzingen naar specifieke pagina van een ander pdf document op internet
+% #1 = OPTIONEEL Verschil tussen paginanummer (weergegeven in pdf viewer) en nummer weergegeven op de pagina zelf.
+% #2 = url van het betreffende pdf document
+% #3 = nummer weergegeven op de pagina zelf
+\makeatletter
+\newcounter{pdfpagref@counter}
+\newcommand{\pdfpagref}[3][0]{%
+    \setcounter{pdfpagref@counter}{#3}%
+    \addtocounter{pdfpagref@counter}{#1}%
+    \href{#2\#page=\thepdfpagref@counter}{pagina~#3}%
+}
+\makeatother
+%<pdfpagref
+
+%>pdfdeelref
+% verwijzingen naar specifiek deel van een ander pdf document op internet
+% #1 = naam van deel, b.v. chapter, section, subsection, enz
+% #2 = naam voor deel,  b.v. hoofdstuk~, paragraaf~, enz
+% #3 = url van het betreffende pdf document
+% #4 = nummer van het betreffende deel, bijvoorbeeld 6.2
+\newcommand{\pdfdeelref}[4]{%
+    \href{#3\#nameddest=#1.#4}{#2#4}%
+}
+%<pdfdeelref
+
+\usepackage[USenglish, dutch]{babel}
+\usepackage[
+    backend=biber,
+    backref=true,
+    backrefstyle=none, % neem paginanummer niet samen in de backref lijst dus 1,2,3 i.p.v. 1-3 (anders kun je niet op 2 klikken)
+    sortcites=true,
+    doi = false, % doi informatie wordt niet weergegeven
+    useprefix=false
+]{biblatex}
+\addbibresource{bibliography.bib}
+\makeatletter
+\AtBeginDocument{\toggletrue{blx@useprefix}}
+\makeatother
+\DefineBibliographyStrings{dutch}{
+    backrefpage = {geciteerd op p.},
+    backrefpages = {geciteerd op pp.},
+}
+
+%>citepdfpag
+% verwijzingen naar specifieke pagina van
+% een ander pdf document op internet uit de referentielijst
+% #1 = OPTIONEEL Verschil tussen paginanummer (weergegeven in pdf viewer) en nummer weergegeven op de pagina zelf.
+% #2 = Bibtexkey
+% #3 = nummer weergegeven op de pagina zelf
+% geinspireerd door: http://tex.stackexchange.com/questions/191174/biblatex-citefield-not-expanded-as-expected
+\makeatletter
+\DeclareCiteCommand{\@saveurlcite}{}{\savefield{url}{\@savedurl}}{}{}
+\newcounter{cite@pag}
+\newcommand{\citepdfpag}[3][0]{%
+    \setcounter{cite@pag}{#3}%
+    \addtocounter{cite@pag}{#1}%
+    \@saveurlcite{#2}%
+    \edef\@savedurlpag{\@savedurl\#page=\thecite@pag}%
+    \cite[\href{\@savedurlpag}{pagina~#3}]{#2}%
+}
+\makeatother
+%<citepdfpag
+
+%>citepdfdeel
+% verwijzingen naar specifiek deel van
+% een ander pdf document op internet uit de referentielijst
+% #1 = naam van deel, b.v. chapter, section, subsection, enz
+% #2 = naam voor deel,  b.v. hoofdstuk~, paragraaf~, enz
+% #3 = Bibtexkey van het betreffende pdf document
+% #4 = nummer van het betreffende deel, bijvoorbeeld 6.2
+% geinspireerd door: http://www.tex.ac.uk/FAQ-twooptarg.html
+\makeatletter
+\newcommand\citepdfdeel[4]{%
+    \@saveurlcite{#3}%
+    \edef\@savedurldeel{\@savedurl\#nameddest=#1.#4}%
+    \cite[\href{\@savedurldeel}{#2#4}]{#3}%
+}
+\makeatother
+%<citepdfdeel
+
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\sectionfont\Huge}{%
+\sectionfont\fontsize{45.64172pt}{0pt}\selectfont\filleft\thechapter}{.5\baselineskip}{}
+{}
+\titleformat{\section}{\sectionfont\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\sectionfont\large}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\sectionfont\large}{\thesubsubsection}{1em}{}
+%mogelijk anpassing opmaak titels
+
+\makeatletter
+\begingroup
+\newif\ifmiktex
+\def\MiKTeX{MiKTeX}
+\@onelevel@sanitize\MiKTeX
+% Scans for 'MiKTeX' string with catcode 12 (other)
+\expandafter\def\expandafter\testmiktex\expandafter#\expandafter1\MiKTeX#2\relax{%
+    \ifx\empty#2\empty
+        \miktexfalse
+    \else
+        \miktextrue
+    \fi
+}
+\expandafter\expandafter
+\expandafter\testmiktex\expandafter\pdftexbanner\MiKTeX\relax\relax
+\ifmiktex
+    \gdef\TeXLiveVersion{0}
+\else
+    \edef\get@@version{\def\noexpand\get@version##1\detokenize{TeX Live}##220##3##4##5)##6\noexpand\@nil}
+    \get@@version{\gdef\TeXLiveVersion{20#3#4}}
+    \expandafter\get@version\pdftexbanner\@nil
+\fi
+\endgroup
+\makeatother
+
+% ruimte onder aan de pagina tussen tekst en voetnoot niet na voetnoot
+% package moet VOOR fancyhdr om warning te voorkomen
+\usepackage[
+    bottom,
+    hang,
+    multiple
+]{footmisc}
+% inspringen
+\setlength{\footnotemargin}{1em}
+% ruimte tussen footnotes:
+\setlength{\footnotesep}{.8\baselineskip}
+
+\expandafter\ifstrequal\expandafter{\myClass}{book}{
+% Voetnoot teller NIET resetten bij elk hoofdstuk
+\let\counterwithout\relax
+\let\counterwithin\relax
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
+}
+
+
+\makeatletter
+
+\newlength{\page@number@width}
+\settowidth{\page@number@width}{\thepage}
+\addtolength{\page@number@width}{6mm}
+
+\newcommand{\rease@header}{\vspace{4pt}}
+
+\newcommand{\page@number@box}{\colorbox{purple}{\makebox[\page@number@width][c]{\color{white}\textbf{\vphantom{2}\thepage}}}}
+
+\usepackage{fancyhdr}
+\newcommand{\myfancy}{
+    \fancyhead{}
+    \fancyfoot{}
+		\expandafter\ifstrequal\expandafter{\myClass}{article}{
+        	\fancyhead[R]{\headerfont\nouppercase{\rightmark}\rease@header{}}
+		}{
+        	\fancyhead[R]{\headerfont\nouppercase{\leftmark}\rease@header{}}
+		}
+        \fancyfoot[L]{\headerfont{}RMI latex} %bedrijf/ vak ipv school
+        \fancyfoot[R]{\headerfont\titel{}\hspace{1em}\page@number@box{}}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+}
+\makeatother
+\markboth{\text{}}{\text{}}
+\pagestyle{fancy}
+\myfancy
+\fancypagestyle{plain}{\myfancy}
+
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{float}
+
+\renewcommand{\topfraction}{.95} %in plaats van .70
+\renewcommand{\bottomfraction}{.95} %in plaats van .30
+\renewcommand{\textfraction}{.05} %in plaats van .20
+\renewcommand{\floatpagefraction}{.90} %in plaats van .5
+\usepackage{siunitx}
+
+\sisetup{
+    per-mode = symbol,
+% binary-units = true,
+    range-units = single,
+% dutch localisation
+    range-phrase = { tot en met },
+    output-decimal-marker = {,},
+    list-final-separator = { en },
+    list-pair-separator  = { en },
+}
+
+\usepackage[
+    font={\captionfont},
+    format=hang,
+    justification=RaggedRight,
+    labelfont={color=purple, bf},
+    hypcap=true,
+    skip=.6\baselineskip
+]{caption}
+
+% vermijdt weduwen en wezen
+\usepackage[defaultlines=2,all]{nowidow}
+
+% standaard Nederlandse quotes zijn old-fashioned (openen laag)
+%>csquote
+\usepackage[style=english]{csquotes}
+\newcommand{\dquote}[1]{\enquote{#1}}
+\newcommand{\squote}[1]{\enquote*{#1}}
+%<csquote
+
+% enumitem zorgt ervoor dat je een enumeratie eenvoudiger kunt aanpassen. B.v. het inspringen.
+\usepackage{enumitem}
+\setlistdepth{5}
+\setlist[enumerate,1]{label=\arabic*.}
+\setlist[enumerate,2]{label=\arabic*.}
+\setlist[enumerate,3]{label=\arabic*.}
+\setlist[enumerate,4]{label=\arabic*.}
+\setlist[enumerate,5]{label=\arabic*.}
+\renewlist{enumerate}{enumerate}{5}
+\setlist{topsep=-.2\baselineskip, itemsep=-.3\baselineskip}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$\triangleright$}
+\setlist[itemize,4]{label=$\diamond$}
+
+\usepackage{footnotebackref}
+% patch see:
+\makeatletter
+\LetLtxMacro{\BHFN@Old@footnotemark}{\@footnotemark}
+\renewcommand*{\@footnotemark}{%
+    \refstepcounter{BackrefHyperFootnoteCounter}%
+    \xdef\BackrefFootnoteTag{bhfn:\theBackrefHyperFootnoteCounter}%
+    \label{\BackrefFootnoteTag}%
+    \BHFN@Old@footnotemark
+}
+\makeatother
+
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    anchorcolor=blue, 
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue,
+    pdftitle={\titel{}},
+    pdfauthor={Hogeschool Rotterdam},
+    pdfdisplaydoctitle=true,
+    pdfpagelayout=\iftoggle{onesided}{SinglePage}{TwoPageRight},
+    %pdfstartview={XYZ null null 1.50}, %voor debuggen
+    %pdfstartview=FitH, % voor debuggen
+    }
+
+    \pdfsuppressptexinfo=1
+
+    % url met mogelijkheid tot afbreken:
+\newcommand{\urlhyp}[1]{%
+	\StrSubstitute{#1}{\\-}{}[\nakedurl]%
+	\href{\nakedurl}{\hcode{#1}}%
+}
+
+% href met voetnoot met daarin de URL:
+\newcommand{\hreffn}[3][]{%
+	\StrSubstitute{#2}{\\-}{}[\nakedurl]%
+	\href[#1]{#2}{#3}\footnote{\href{\nakedurl}{\hcode{#2}}}%
+}
+
+\usepackage[dutch, noabbrev, nameinlink]{cleveref}
+\crefname{lstlisting}{listing}{listings}
+\Crefname{lstlisting}{Listing}{Listings}
+\crefname{opdracht}{opdracht}{opdrachten}
+\Crefname{opdracht}{Opdracht}{Opdrachten}
+\expandafter\ifstrequal\expandafter{\myClass}{article}{
+    \crefname{section}{hoofdstuk}{hoofdstukken}
+    \Crefname{section}{Hoofdstuk}{Hoofdstukken}
+    \crefname{subsection}{paragraaf}{paragrafen}
+    \Crefname{subsection}{Paragraaf}{Paragrafen}
+    \crefname{subsubsection}{paragraaf}{paragrafen}
+    \Crefname{subsubsection}{Paragraaf}{Paragrafen}
+}{}
+\crefname{appendix}{bijlage}{bijlagen}
+\Crefname{appendix}{Bijlage}{Bijlagen}
+\crefname{circuit}{schakeling}{schakelingen}
+\Crefname{circuit}{Schakeling}{Schakelingen}
+\newcommand{\crefrangeconjunction}{ tot en met }

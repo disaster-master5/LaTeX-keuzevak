@@ -1,0 +1,47 @@
+% !TEX root = main.tex
+
+% Note: Als de makefile NIET wordt gebruikt, moet je niet vergeten om eerst bibber 
+%       te draaien omdat je anders foutmeldingn krijgt van de LaTeX-compiler: 
+%       Undefined control sequence. ... het lezen van paragrafen \lshortdeel{1.3}.
+
+% In de makefile kunnen argumenten worden meegegeven:
+% Keuze lettertypes
+% 	FONT = \chartertrue voor Charter met Berasans fonts
+% 	FONT = \timestrue voor Times met Helvet fonts
+%   (default) standaard LaTeX fonts (Computer Modern)
+
+\newcommand{\myClass}{book}
+
+\newcommand{\titel}{test}
+\newcommand{\documenttype}{Handleiding}
+\newcommand{\huidigeversie}{2.6}
+% start a new line by using \\ 
+\newcommand{\auteurs}{
+    Jasmine Hottentot
+}
+%<neededcommands
+
+\input{settings.tex}
+
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\begin{document}
+\frontmatter
+\include{versiegeschidenis}
+%\clearpage
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+\tableofcontents
+%\clearpage
+
+\mainmatter
+
+%\begin{llstShortInline}
+\include{hooftstuk_1}
+%\end{llstShortInline}
+
+\printbibliography[heading=bibintoc]{}
+\appendix
+\backmatter
+\end{document}
