@@ -12,13 +12,16 @@
 
 \newcommand{\myClass}{book}
 
-\newcommand{\titel}{test}
-\newcommand{\documenttype}{Handleiding}
-\newcommand{\huidigeversie}{2.6}
+\newcommand{\titel}{Aantekeningen EPS}
+\newcommand{\documenttype}{Verslag latex keuzevak}
+\newcommand{\huidigeversie}{0.2}
 % start a new line by using \\ 
 \newcommand{\auteurs}{
     Jasmine Hottentot
 }
+%\newcommand{\begelijderschool}{test}
+%\newcommand{\begelijderstage}{test}
+
 %<neededcommands
 
 \input{settings.tex}
@@ -28,6 +31,7 @@
 
 \begin{document}
 \frontmatter
+\include{titelpagina}
 \include{versiegeschidenis}
 %\clearpage
 \setcounter{tocdepth}{4}
@@ -39,6 +43,8 @@
 
 %\begin{llstShortInline}
 \include{hooftstuk_1}
+\include{hoofdstuk_2}
+\include{hoofdstuk_3}
 %\end{llstShortInline}
 
 \printbibliography[heading=bibintoc]{}

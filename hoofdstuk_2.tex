@@ -1,0 +1,161 @@
+%!TEX root = main.tex
+\chapter{Transformatoren}
+\label{Transformatoren}
+
+Het schema voor de transformer kan op de volgende manier worden getekend:
+
+\begin{center}
+    \begin{circuitikz}[scale=0.8] 
+        \draw (-1,-2) to[isourcesin] (-1,2);
+        \draw (-1,2) to[short] (2,2);
+        \draw (2,2) to[short] (2,1);
+        \draw (3,1) to[short] (1,1);
+        \draw (1,1) to[cute inductor, l_=$jX_c$] (1,-1);
+        \draw (3,1) to[american resistor, l_=$R_c$, i_=$I_0$] (3,-1);
+        \draw (3,-1) to[short] (1,-1);
+        \draw (2,-1) to[short] (2,-2);
+        \draw (2,-2) to[short] (-1,-2);
+        \draw (2,2) to[short] (4,2);
+        \draw (4,2) to[L, l=$jX_1$, i_=$I_1$] (6,2);
+        \draw (6,2) to[american resistor, l_=$R_1$] (9,2);
+        \draw (9,2) to[cute inductor] (9,-2);
+        \draw (9,-2) to[short] (2,-2);
+        \draw (10,2) to[cute inductor] (10,-2);
+        \draw (10,2) to[L, l=$jX_2$, i_=$I_2$] (12,2);
+        \draw (12,2) to[american resistor, l_=$R_2$] (14,2);
+        \draw (14,2) to[european resistor, l_=$R_L$] (14,-2);
+        \draw (14,-2) to[short] (10,-2);
+        \draw (8,2) to [open, v^>=$V_1$] (8,-2);
+        \draw (11,2) to [open, v^>=$V_2$] (11,-2);
+    \end{circuitikz}
+\end{center}
+
+Binnen de schakeling zijn 2 verliezen te berekenen. Koper verliezen ($P_{Cu}$) en ijzer verliezen ($P_{Fe}$). 
+
+$P_{Cu} = I_1^2 \cdot R_1 + I_2^2 \cdot R_2$
+
+$P_{Fe} = \frac{V_s^2}{R_c}$
+
+Het ijzer verlies is vanwege de kern. Daarom wordt het ook geschreven als $P_c$ (core).
+
+Naast de koper verliesen en ijzer verliezen, is er nog een klein beetje extra verlies, dit heet hysterese verlies.
+
+Voor het rekenen aan de bovenstaande schakeling zij de volgende formules van belang:
+
+$\frac{V_2}{V_1}=\frac{N_2}{N_1}$
+
+$\frac{I_2}{I_1}=\frac{N_1}{N_2}$
+
+\vspace{5mm}
+
+Ook geldt:
+
+$I_0$= nullasttroom
+
+\vspace{5mm}
+
+In deze formules is $N$ het aantal windingen van de spoel. Of de verhouding van de windingen.
+
+$\varepsilon = N \cdot \frac{d\Phi}{dt}$
+
+\vspace{5mm}
+
+in de schakeling geld: 
+
+$P_1=P_2$
+
+Dus
+
+$V_1 \cdot I_1 = V_2 \cdot I_2$
+
+\vspace{5mm}
+
+De percent regulation kan worden berekend met de volgende formule:
+
+$\frac{V_{no-load}-V_{load}}{V_{load}} \cdot 100\%$
+
+\vspace{5mm}
+
+De power efficiency kan worden berekend met de volgende formule:
+
+$\eta = \frac{P_{load}}{P_{in}}$
+
+$P_{load} = P_{in}-P_{loss}$
+
+$P_{loss} = P_{Cu} + P_{Fe}$
+
+\vspace{5mm}
+
+Om het rekenen aan de schakeling te vereenvoudigen kan je reflecteren naar links. Dan komt de schakeling er als volgende uit te zien:
+
+\begin{center}
+    \begin{circuitikz}
+        \draw (0,0) to[isourcesin] (0,2)
+        to[american resistor, l=$R_1$] (4,2)
+        to[european resistor, l=$Z_L'$] (4,0)
+        to[short] (0,0);
+        \draw (3,2) to[open, v^>=$V_1$] (3,0);
+    \end{circuitikz}
+\end{center}
+
+Hier geldt:
+
+$Z_L' = \left( \frac{N_1}{N_2} \right)^2 \cdot Z_L$
+
+\section{Nullastproef}
+De nullastproef wordt gebruikt om de ijzer verliezen te bepalen. Hier wordt geen load aangesloten. De schakeling ziet er als volgt uit:
+
+\begin{center}
+    \begin{circuitikz} 
+        \draw (-1,-2) to[isourcesin, l^=$U_{nom}$] (-1,2);
+        \draw (-1,2) to[short, -*] (4,2);
+        \draw (2,2) to[short] (2,1);
+        \draw (3,1) to[short] (1,1);
+        \draw (1,1) to[cute inductor, l_=$jX_c$, i_=$I_\mu$] (1,-1);
+        \draw (3,1) to[american resistor, l_=$R_c$, i_=$I_{Fe}$] (3,-1);
+        \draw (3,-1) to[short] (1,-1);
+        \draw (2,-1) to[short] (2,-2);
+        \draw (-1,-2) to[short, -*] (4,-2);
+    \end{circuitikz}
+\end{center}
+
+Hier geldt:
+$U_{nom}$ = nominale spanning
+$I_\mu$ = magnetiseringsstroom
+$I_{Fe}$ = ijzer verlies stroom
+$P_{Fe}$ = vermogen
+ 
+$P_{Fe} = \frac{U_{nom}^2}{R_c}$
+
+$R_c=\frac{N_{nom}^2}{R_L}$
+
+$I_{Fe} = I_c=\frac{P_{Fe}}{U_{nom}}$
+
+$I_0 = \sqrt{I_\mu^2 + I_{Fe}^2}$  
+
+$X_c=\frac{U_{nom}}{I_\mu}$
+
+\section{Kortsluit proef}
+De kortsluit proef wordt gebruikt om de koper verliezen te bepalen. Hie wordt het kort gesloten. De schakeling ziet er als volgt uit:
+
+\begin{center}
+    \begin{circuitikz}
+        \draw (0,0) to[isourcesin, i^=$I_{nom}$] (0,2)
+        to [L, l=$jX_{k}$] (2,2)
+        to [american resistor, l=$R_k$] (4,2)
+        to [short] (4,0)
+        to [short] (0,0);
+    \end{circuitikz}
+\end{center}
+
+Hier geldt:
+
+$I_{nom}$ = nominale stroom
+
+$P_{Cu} = I_{nom}^2 \cdot R_k$
+
+$X_k=X_1+X_2'$
+
+$X_k= \sqrt{Z_k^2-R_k^2}$ %let op verbetert naat -
+
+$R_k=R_1+R_2'$

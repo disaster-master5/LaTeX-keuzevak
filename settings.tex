@@ -90,6 +90,7 @@
 \usetikzlibrary{shapes, arrows, arrows.meta, positioning, fadings, shadows}
 \usepackage{pgfplots}
 \pgfplotsset{compat=newest}
+\usepackage{tkz-euclide}
 \usepackage[american, european resistors, cute inductor, siunitx, nooldvoltagedirection]{circuitikz}
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -100,9 +101,88 @@
 
 \pagestyle{empty}
 
+\makeatletter
 %maken van een titelpagina
+%>titelpagina
+% \titelpagina definieert de titlepage
+% 1 = Naam van het plaatje in directory ./fig. 
+%     Neem een hoog resolutie plaatje.
+%     De hoogte moet ongeveer 0,5 x de breedte zijn. 
+\newcommand{\titelpagina}[1]{
+
+    \newlength{\y@logobedrijfa}
+    \newlength{\x@logobedrijfa}
+    \newlength{\y@logobedrijfb}
+    \newlength{\x@logobedrijfb}
+    \newlength{\y@titel}
+    \newlength{\x@recttop}
+    \newlength{\y@rectbottom}
+    \newlength{\height@logobedrijfa}
+    \newlength{\height@logobedrijfb}
+    \newlength{\x@titel}
+
+    \setlength{\y@logobedrijfa}{6.5cm} %set
+    \setlength{\x@logobedrijfa}{16cm} %set
+    \setlength{\y@logobedrijfb}{6.5cm} %set
+    \setlength{\x@logobedrijfb}{10cm} %set
+    \setlength{\y@titel}{4.5cm}
+    \setlength{\x@recttop}{5cm}
+    \setlength{\y@rectbottom}{4cm}
+    \setlength{\height@logobedrijfa}{3.4cm} %set
+    \setlength{\height@logobedrijfb}{3.4cm} %set
+    \setlength{\x@titel}{12cm}
+
+    \begin{titlepage}
+        \centering
+        \makebox[\textwidth]{%
+            \checkoddpage
+            \ifoddpage
+                \hspace*{\dimexpr\evensidemargin-\oddsidemargin}
+            \else
+                \hspace*{-\dimexpr\evensidemargin-\oddsidemargin}
+            \fi
+
+            \begin{tikzpicture}[
+                every node/.style={anchor=north east, inner sep=0pt},
+            ] 
+                \draw [fill=purple] (0,\paperwidth) rectangle (\x@recttop,16);
+
+                \draw [fill=purple] (10.5,\paperwidth) rectangle (5.5,15);
+
+                \draw [fill=purple] (15.5,\paperwidth) rectangle (11,\paperwidth);
+
+                \node at (\x@logobedrijfa,\y@logobedrijfa) {   
+                \includegraphics[height=\height@logobedrijfa]{logo/#1}
+                };
+
+                % \node at (\x@logobedrijfb,\y@logobedrijfb) {
+                % \includegraphics[height=\height@logobedrijfb]{logo/...} %logo van ander bedrijf
+                % };
+
+                \node[scale=2] at (\x@titel,\y@titel) {\hbox{\sffamily \titel}};
+
+                \end{tikzpicture}
+    } \par
+    \vspace{3cm}
+    {\sffamily\bfseries\Large\selectfont%
+                \documenttype\par
+        } 
+    {\sffamily\selectfont%
+            Versie \huidigeversie\par%
+            \auteurs
+            %\begelijderschool
+            %\begelijderstage
+        } 
+    \end{titlepage}
+}
+\makeatother
 
 %versiebeheer
+% commando voor versiehistorie tabel
+% #1 = tabel inhoud
+% tabel heeft 4 kolommen:
+% Datum & Versie & Omschrijving & Auteur
+% Gebruik \\ \line om de rijen te scheiden.
 \newcommand{\versiehistorieheader}{%
 	\arrayrulecolor{purple}\hline
 	\rowcolor{purple} 

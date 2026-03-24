@@ -1,0 +1,60 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.20)  24 MAR 2026 11:00
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/jasmi/LaTeX-keuzevak/settings.tex
+(c:/Users/jasmi/LaTeX-keuzevak/settings.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-10>
+c:/Users/jasmi/LaTeX-keuzevak/settings.tex:9: Undefined control sequence.
+<argument> \myClass 
+                    .\@clsextension 
+l.9 \usepackage
+               [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/jasmi/LaTeX-keuzevak/settings.tex:9: LaTeX hooks Error: Missing (empty) default label on line 9.
+(hooks)              This command was ignored.
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.9 \usepackage
+               [
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+
+! LaTeX Error: File `.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+c:/Users/jasmi/LaTeX-keuzevak/settings.tex:9: Emergency stop.
+<read *> 
+         
+l.9 \usepackage
+               [^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 467532
+ 491 string characters out of 5423649
+ 433759 words of memory out of 5000000
+ 29030 multiletter control sequences out of 15000+600000
+ 627721 words of font info for 40 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 22i,0n,49p,97b,42s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/Users/jasmi/LaTeX-keuzevak/settings.tex:9:  ==> Fatal error occurred, no output PDF file produced!
