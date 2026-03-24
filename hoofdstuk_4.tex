@@ -1,0 +1,134 @@
+%!TEX root = main.tex
+\chapter{Driefasen}
+\label{Driefasen}
+
+Bij het gebruik van drie fase zijn er 2 verschillende schakelingen mogelijk. Y-Y of $\Delta -\Delta$.
+
+\section{Y-Y configuratie}
+
+Dit is de schakeling voor de Y-Y of ster-ster configuratie:
+
+\begin{center}
+    \begin{circuitikz}
+        \draw (0,0) to[isourcesin, l_=$V_{bn}$] (2,1.75)
+        to [short, o-o, i_=$I_{bB}$] (3,1.75)
+        to [european resistor, l_=$Z_y$] (5,0)
+        to [european resistor, l_=$Z_y$] (5,-2)
+        to [short, o-o, i<_=$I_{cC}$] (0,-2)
+        to [isourcesin, l_=$V_{cn}$] (0,0);
+        \draw (0,0) to[isourcesin, l_=$V_{an}$] (-2,1.75)
+        to [short] (-2,3)%7,1.75
+        to [short, o-o, i>_=$I_{aA}$] (7,3)
+        to [short] (7,1.75) %-2,3
+        to [european resistor, l^=$Z_y$] (5,0); 
+        \draw[dotted] (5,0) to[short, i_=$I_{Nn}$] (0,0);
+    \end{circuitikz}
+\end{center}
+
+Voor de spanningen geldt het volgende:
+
+$V_{an}=V_y\angle 0^\circ$
+
+$V_{bn}=V_y\angle -120^\circ$
+
+$V_{cn}=V_y\angle 120^\circ$
+
+\vspace{5mm}
+
+De gestippelde line is de line to neutral stroom.
+
+Voor de fase spanningen geldt:
+
+$I_{aA}=\frac{V_y\angle 0}{Z_y\angle \theta ^\circ}=I_L\angle -\theta ^\circ$
+
+$I_{bB}=\frac{V_y\angle -120}{Z_y\angle \theta ^\circ}=I_L\angle -120^\circ -\theta ^\circ$
+
+$I_{cC}=\frac{V_y\angle 120}{Z_y\angle \theta ^\circ}=I_L\angle 120^\circ -\theta ^\circ$
+
+Hierbij geldt ook, $I_{aA}+I_{bB}+I_{cC}=0$, en dus $I_{nN}=0$ 
+
+\vspace{5mm}
+
+Voor het berekenen van het vermogen worde de volgende formule gebruikt:
+
+$p(t)=3V_y\cdot I_L\cdot \cos \theta$
+
+\vspace{5mm}
+
+Lijnspanning: de spanning tussen 2 lijnen.
+
+$V_{ab}=V_{AB}=$lijnspanning
+
+$V_{ab}=V_{an}-V_{bn}$
+
+$V_{an}=V_{ab} \cdot \frac{1}{\sqrt{3}}\angle -30^\circ $
+
+$V_{ab}=V_{an} \cdot \sqrt{3} \angle 30^\circ$
+
+\section{$\Delta -\Delta $ configuratie}
+
+Dit is de schakeling voor de $\Delta -\Delta $ / delta - delta of driehoek - driehoek, configuratie.
+
+\begin{center}
+    \begin{circuitikz}
+        \draw (0,0) to[isourcesin] (3,0)
+        to [isourcesin] (1.5,-2.25)
+        to [isourcesin] (0,0);
+        \draw (5,0) to[european resistor, l^=$Z_\Delta $] (8,0)
+        to [european resistor, l^=$Z_\Delta $] (6.5,-2.25)
+        to [european resistor, l^=$Z_\Delta $] (5,0);
+        \draw (3,0) to[short, o-o, i<_=$I_{bB}$] (5,0);
+        \draw (1.5,-2.25) to[short, o-o, i>_=$I_{cC}$] (6.5,-2.25);
+        \draw (0,0) to[short] (0,1)
+        to[short, o-o, i>_=$I_{aA}$] (8,1)
+        to[short] (8,0);
+    \end{circuitikz}
+\end{center}
+
+In deze configuratie is geen line tot neutral te vinden. Voor de spanningen geldt hey volgende:
+
+$V_{ab}=$ lijnspanning
+
+$V_{ab}=V_L\angle 30^\circ$
+
+$V_{bc}=V_L\angle -90^\circ$
+
+$V_{ca}=V_L\angle 150^\circ$
+
+\vspace{5mm}
+
+De fasestroom: stroom door de fase (belasting).
+
+$V_{ab}=V_{AB}$
+
+$I_{AB}=\frac{V_{AB}}{Z_\Delta}=\frac{V_{ab}}{Z_\Delta}=\frac{V_L \angle 30^\circ}{Z\angle \theta^\circ}=I_A \angle 30^\circ - \theta ^\circ$
+
+$I_{CA}=\frac{V_{CA}}{Z_\Delta}=\frac{V_{ab}}{Z_\Delta}=\frac{V_L \angle 150^\circ}{Z\angle \theta^\circ}=I_A \angle 150^\circ - \theta ^\circ$
+
+$I_{aA}=I_{AB}-I_{CA}$
+
+$I_{aA}=\sqrt{3}\cdot I_{AB} \angle -30^\circ$
+
+\vspace{5mm}
+
+Als we een belasting toevoegen op de lijn aA kan dit niet berekend worden. Hier voor zou de driehoek naar de ster configuratie
+worden om gezet. Hierbij geldt:
+
+$V_{an}=V_{ab}\cdot \frac{1}{\sqrt{3}}\angle -30^\circ$
+
+$Z_\Delta =3Z_y$
+
+\vspace{5mm}
+
+Bij het berekenen van het vermogen geldt: 
+
+$U_{load}\cdot I_{load} \cdot \cos \varphi$
+
+$U_{load}\cdot I_{load} \cdot \sin \varphi$
+
+$\varphi$ kan je direct uit de hoek van de impendantie halen.
+
+\vspace{5mm}
+
+De vermogens van bijde schakelingen, dus Y-Y en $\Delta - \Delta$, zijn altijde het zelfde.
+

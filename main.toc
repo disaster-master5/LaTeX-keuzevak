@@ -8,3 +8,6 @@
 \contentsline {chapter}{\numberline {3}TRIAC en tryristor}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Tryristor}{9}{section.3.1}%
 \contentsline {section}{\numberline {3.2}TRIAC}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Driefasen}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Y-Y configuratie}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}$\Delta -\Delta $ configuratie}{13}{section.4.2}%

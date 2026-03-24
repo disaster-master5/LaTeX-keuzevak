@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.20)  24 MAR 2026 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.20)  24 MAR 2026 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1640,7 +1640,7 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 ) (./main.aux (./titelpagina.aux)
 Package babel Info: 'dutch' activates 'dutch' shorthands.
 (babel)             Reported on input line 11.
- (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux))
+ (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux) (./hoofdstuk_4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -1841,7 +1841,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 \height@logobedrijfa=\skip134
 \height@logobedrijfb=\skip135
 \x@titel=\skip136
-<logo/logoHR.pdf, id=67, 94.3525pt x 94.3525pt>
+<logo/logoHR.pdf, id=79, 94.3525pt x 94.3525pt>
 File: logo/logoHR.pdf Graphic file (type pdf)
 <use logo/logoHR.pdf>
 Package pdftex.def Info: logo/logoHR.pdf  used on input line 8.
@@ -1960,35 +1960,93 @@ Package cleveref Info: loaded `dutch' language definitions on input line 83.
  [10])
 Package cleveref Info: loaded `dutch' language definitions on input line 47.
  [11]
+\openout2 = `hoofdstuk_4.aux'.
 
-LaTeX Warning: Empty bibliography on input line 50.
+ (./hoofdstuk_4.tex
+Hoofdstuk 4.
+Package cleveref Info: loaded `dutch' language definitions on input line 37.
+[12
+
+
+
+
+]
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 16.58891pt on input line 68.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 68.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 16.58891pt on input line 68.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 68.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 16.58891pt on input line 68.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 68.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 16.58891pt on input line 68.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 68.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 16.58891pt on input line 68.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 68.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 68.
+
+Package cleveref Info: loaded `dutch' language definitions on input line 86.
+[13]
+Package cleveref Info: loaded `dutch' language definitions on input line 127.
+ [14])
+Package cleveref Info: loaded `dutch' language definitions on input line 48.
+ [15]
+
+LaTeX Warning: Empty bibliography on input line 51.
 
 (./main.aux (./titelpagina.aux)
 Package cleveref Info: loaded `dutch' language definitions on input line 11.
- (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux))
+ (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux) (./hoofdstuk_4.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BF27C95EB0888DC0A23604B1B57AEB4A;1151.
+(rerunfilecheck)             Checksum: DA63BCE4A27F58469888BC44FFC0C24E;1506.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 80604 strings out of 467532
- 2001597 string characters out of 5423649
- 3207352 words of memory out of 5000000
- 108267 multiletter control sequences out of 15000+600000
- 652853 words of font info for 120 fonts, out of 8000000 for 9000
+ 81387 strings out of 467532
+ 2024851 string characters out of 5423649
+ 3210032 words of memory out of 5000000
+ 109017 multiletter control sequences out of 15000+600000
+ 663415 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,14n,135p,1503b,2090s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7m.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb>
-Output written on main.pdf (14 pages, 175402 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7m.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb>
+Output written on main.pdf (18 pages, 195156 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 500000)
- 27834 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 34002 words of extra memory for PDF output out of 35830 (max. 10000000)
 
