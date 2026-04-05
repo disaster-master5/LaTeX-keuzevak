@@ -3,7 +3,7 @@
 \label{Transformatoren}
 
 Het schema voor de transformer kan op de volgende manier worden getekend:
-
+%schakeling transformator
 \begin{center}
     \begin{circuitikz}[scale=0.8] 
         \draw (-1,-2) to[isourcesin] (-1,2);
@@ -31,10 +31,8 @@ Het schema voor de transformer kan op de volgende manier worden getekend:
 \end{center}
 
 Binnen de schakeling zijn 2 verliezen te berekenen. Koper verliezen ($P_{Cu}$) en ijzer verliezen ($P_{Fe}$). 
-
-$P_{Cu} = I_1^2 \cdot R_1 + I_2^2 \cdot R_2$
-
-$P_{Fe} = \frac{V_s^2}{R_c}$
+Voor de koperverliezen geldt $P_{Cu} = I_1^2 \cdot R_1 + I_2^2 \cdot R_2$. En voor de ijzer verliezen geldt 
+$P_{Fe} = \frac{V_s^2}{R_c}$. 
 
 Het ijzer verlies is vanwege de kern. Daarom wordt het ook geschreven als $P_c$ (core).
 
@@ -55,7 +53,6 @@ $I_0$= nullasttroom
 \vspace{5mm}
 
 In deze formules is $N$ het aantal windingen van de spoel. Of de verhouding van de windingen.
-
 $\varepsilon = N \cdot \frac{d\Phi}{dt}$
 
 \vspace{5mm}
@@ -86,8 +83,9 @@ $P_{loss} = P_{Cu} + P_{Fe}$
 
 \vspace{5mm}
 
-Om het rekenen aan de schakeling te vereenvoudigen kan je reflecteren naar links. Dan komt de schakeling er als volgende uit te zien:
-
+Om het rekenen aan de schakeling te vereenvoudigen kan je reflecteren naar links. Dan komt de schakeling er als volgende uit te 
+zien:
+%gerefelcteerd naarlinks schakeling
 \begin{center}
     \begin{circuitikz}
         \draw (0,0) to[isourcesin] (0,2)
@@ -98,13 +96,11 @@ Om het rekenen aan de schakeling te vereenvoudigen kan je reflecteren naar links
     \end{circuitikz}
 \end{center}
 
-Hier geldt:
-
-$Z_L' = \left( \frac{N_1}{N_2} \right)^2 \cdot Z_L$
+De formule komt er dan als volgt uit te zien $Z_L' = \left( \frac{N_1}{N_2} \right)^2 \cdot Z_L$.
 
 \section{Nullastproef}
 De nullastproef wordt gebruikt om de ijzer verliezen te bepalen. Hier wordt geen load aangesloten. De schakeling ziet er als volgt uit:
-
+%schakeling nullastproef
 \begin{center}
     \begin{circuitikz} 
         \draw (-1,-2) to[isourcesin, l^=$U_{nom}$] (-1,2);
@@ -137,7 +133,7 @@ $X_c=\frac{U_{nom}}{I_\mu}$
 
 \section{Kortsluit proef}
 De kortsluit proef wordt gebruikt om de koper verliezen te bepalen. Hie wordt het kort gesloten. De schakeling ziet er als volgt uit:
-
+%schakeling kortsluitproef
 \begin{center}
     \begin{circuitikz}
         \draw (0,0) to[isourcesin, i^=$I_{nom}$] (0,2)
@@ -156,6 +152,68 @@ $P_{Cu} = I_{nom}^2 \cdot R_k$
 
 $X_k=X_1+X_2'$
 
-$X_k= \sqrt{Z_k^2-R_k^2}$ %let op verbetert naat -
+$X_k= \sqrt{Z_k^2-R_k^2}$ %let op later verbetert naar - ipv +
 
 $R_k=R_1+R_2'$
+
+Tijdens het werken aan het lab zijn er metingen gedaan deze zijn te vinden in \cref{tab:travo_meting_weerstand}. 
+UIt deze resultaten blijkt dat een veranderende weersatnd zorgt voor een lagere effienctie. Hier is ook in te zien dat het
+blindvermogen toeneemt, dit komt door de spoellen die zich bezinden in de transsformator.
+
+In een andere test is juits de spanning aangepast \cref{tab:travo_meting_spanning}
+In deze test was juist waar te nemen dat een het veranderen van de spanning geen invloed heeft op de efficentie. De efficentie is 
+dus enkel afhankelijk van de weerstand van de load.
+
+\begin{table}
+    \begin{center}
+        \scalebox{0.8}{
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \arrayrulecolor{purple}\hline
+	    \rowcolor{purple} 
+	    \multicolumn{1}{c}{\textcolor{white}{\textbf{$R(\Omega)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$P_{in}(W)$}}} &
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$Q_{in}(VAR)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$S_{in}(VA)$}}} &
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$I_{load}(mA)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$P_{load}(W)$}}} & 
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$efficentie(\%)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$V_{load}(V)$}}}
+	    \\ \hline
+        150 & 3.64 & 0.409 & 3.67 & 153 & 3.33 & 91.48 & 21.76
+        \\ \hline
+        140 & 3.78 & 0.430 & 3.01 & 159 & 3.44 & 91.01 & 21.63
+        \\ \hline
+        130 & 4.07 & 0.470 & 4.09 & 179 & 3.67 & 90.17 & 21.36
+        \\ \hline
+         120 & 4.40 & 0.530 & 4.42 & 186 & 3.91 & 88.66 & 21.03
+        \\ \hline
+        25 & 4.77 & 0.600 & 4.80 & 204 & 4.21 & 88.26 & 20.64
+        \\ \hline
+    \end{tabular}}
+    \caption{Meetingen aan een transformator van het lab met veranderende weerstand. Bij $V=25V$}
+    \label{tab:travo_meting_weerstand}
+\end{center}
+\end{table}
+
+\begin{table}
+    \begin{center}
+       \scalebox{0.8}{ 
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \arrayrulecolor{purple}\hline
+	    \rowcolor{purple} 
+	    \multicolumn{1}{c}{\textcolor{white}{\textbf{$V_{in}(V)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$P_{in}(W)$}}} &
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$Q_{in}(VAR)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$S_{in}(VA)$}}} &
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$I_{load}(mA)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$P_{load}(W)$}}} & 
+        \multicolumn{1}{c}{\textcolor{white}{\textbf{$efficentie(\%)$}}} & \multicolumn{1}{c}{\textcolor{white}{\textbf{$V_{load}(V)$}}}
+        \\ \hline
+            10 & 0.67 & 0.096 & 0.66 & 71 & 0.60 & 90 & 8.47
+            \\ \hline
+            14 & 1.27 & 0.168 & 1.28 & 97 & 1.15 & 91 & 11.81
+            \\ \hline
+            18 & 2.08 & 0.259 & 2.09 & 124 & 1.89 & 91 & 15.24
+            \\ \hline
+            22 & 3.09 & 0.37 & 3.11 & 150 & 2.79 & 90 & 18.60
+            \\ \hline
+            25 & 4.06 & 0.474 & 4.09 & 171 & 3.65 & 90 & 21.37
+            \\ \hline
+    \end{tabular}}
+    \caption{Metingen aan transformator van het lab met veranderende spanning. Bij $R=126\Omega$}
+    \label{tab:travo_meting_spanning}
+    \end{center}
+\end{table}

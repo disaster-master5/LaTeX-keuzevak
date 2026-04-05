@@ -7,7 +7,7 @@ Bij het gebruik van drie fase zijn er 2 verschillende schakelingen mogelijk. Y-Y
 \section{Y-Y configuratie}
 
 Dit is de schakeling voor de Y-Y of ster-ster configuratie:
-
+%schakeling Y-Y
 \begin{center}
     \begin{circuitikz}
         \draw (0,0) to[isourcesin, l_=$V_{bn}$] (2,1.75)
@@ -48,6 +48,17 @@ $I_{cC}=\frac{V_y\angle 120}{Z_y\angle \theta ^\circ}=I_L\angle 120^\circ -\thet
 Hierbij geldt ook, $I_{aA}+I_{bB}+I_{cC}=0$, en dus $I_{nN}=0$ 
 
 \vspace{5mm}
+In \cref{fig:driefase_spanningen} zij de 3 verschillende fase spanningen te zien.
+
+\begin{figure}
+    \begin{center}
+    \includegraphics[width=0.5\linewidth]{afbeeldingen/IMG-20260326-WA0006.jpg}
+    \caption{Spanningen van de 3 verschillende fase}
+    \label{fig:driefase_spanningen}
+    \end{center}
+\end{figure}
+    
+\vspace{5mm}
 
 Voor het berekenen van het vermogen worde de volgende formule gebruikt:
 
@@ -65,10 +76,10 @@ $V_{an}=V_{ab} \cdot \frac{1}{\sqrt{3}}\angle -30^\circ $
 
 $V_{ab}=V_{an} \cdot \sqrt{3} \angle 30^\circ$
 
-\section{$\Delta -\Delta $ configuratie}
+\section{$\Delta -\Delta $ configuratie} %later onderzoeken wat warning betekend. lijkt geen invloet op pdf te hebben
 
 Dit is de schakeling voor de $\Delta -\Delta $ / delta - delta of driehoek - driehoek, configuratie.
-
+%schakeling driehoek driehoek
 \begin{center}
     \begin{circuitikz}
         \draw (0,0) to[isourcesin] (3,0)

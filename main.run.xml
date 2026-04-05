@@ -83,6 +83,7 @@
     </requires>
     <requires type="editable">
       <file>bibliography.bib</file>
+      <file>bronnen.bib</file>
     </requires>
   </external>
 </requests>

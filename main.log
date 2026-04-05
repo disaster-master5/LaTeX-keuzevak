@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.20)  24 MAR 2026 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.20)  5 APR 2026 21:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1637,42 +1637,42 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box160
 \mc@col@check@num=\count533
 \g__mc_curr_col_int=\count534
-) (./main.aux (./titelpagina.aux)
+) (./main.aux (./hoofdstukken/titelpagina.aux)
 Package babel Info: 'dutch' activates 'dutch' shorthands.
 (babel)             Reported on input line 11.
- (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux) (./hoofdstuk_4.aux))
+ (./hoofdstukken/versiegeschidenis.aux) (./hoofdstukken/hooftstuk_1.aux) (./hoofdstukken/hoofdstuk_2.aux) (./hoofdstukken/hoofdstuk_3.aux) (./hoofdstukken/hoofdstuk_4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 32.
-LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 34.
  (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 32.
-LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 32.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 34.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 34.
  (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1736,7 +1736,7 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-dutch.trsl
 File: translations-basic-dictionary-dutch.trsl (dutch translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `dutch'. on input line 32.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `dutch'. on input line 34.
  (c:/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
@@ -1776,10 +1776,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' not found.
 
 No file main.bbl.
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
+Package biblatex Info: Reference section=0 on input line 34.
+Package biblatex Info: Reference segment=0 on input line 34.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: Option `justification=RaggedRight' requires the `ragged2e' package on input line 32.
+Package caption Info: Option `justification=RaggedRight' requires the `ragged2e' package on input line 34.
 (c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip113
@@ -1799,7 +1799,7 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 )
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 34.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1807,13 +1807,13 @@ Package hyperref Info: Link coloring ON on input line 32.
 Package microtype Info: Patching varwidth to enable character protrusion.
 \MT@vwid@leftmargin=\dimen394
 \MT@vwid@rightmargin=\dimen395
-LaTeX Info: Redefining \microtypecontext on input line 32.
-Package microtype Info: Applying patch `item' on input line 32.
-Package microtype Info: Applying patch `toc' on input line 32.
-Package microtype Info: Applying patch `eqnum' on input line 32.
-Package microtype Info: Applying patch `footnote' on input line 32.
-Package microtype Info: Applying patch `verbatim' on input line 32.
-LaTeX Info: Redefining \microtypesetup on input line 32.
+LaTeX Info: Redefining \microtypecontext on input line 34.
+Package microtype Info: Applying patch `item' on input line 34.
+Package microtype Info: Applying patch `toc' on input line 34.
+Package microtype Info: Applying patch `eqnum' on input line 34.
+Package microtype Info: Applying patch `footnote' on input line 34.
+Package microtype Info: Applying patch `verbatim' on input line 34.
+LaTeX Info: Redefining \microtypesetup on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1828,9 +1828,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmbr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\openout2 = `titelpagina.aux'.
+\openout2 = `hoofdstukken/titelpagina.aux'.
 
- (./titelpagina.tex
+ (./hoofdstukken/titelpagina.tex
 \y@logobedrijfa=\skip127
 \x@logobedrijfa=\skip128
 \y@logobedrijfb=\skip129
@@ -1856,24 +1856,24 @@ LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <17.28> not available
 
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./logo/logoHR.pdf>])
-\openout2 = `versiegeschidenis.aux'.
+\openout2 = `hoofdstukken/versiegeschidenis.aux'.
 
- (./versiegeschidenis.tex (c:/texlive/2025/texmf-dist/tex/latex/cmbright/ot1cmbr.fd) (c:/texlive/2025/texmf-dist/tex/latex/cmbright/omlcmbrm.fd) (c:/texlive/2025/texmf-dist/tex/latex/cmbright/omscmbrs.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-bch.cfg) (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd))
-Package cleveref Info: loaded `dutch' language definitions on input line 35.
+ (./hoofdstukken/versiegeschidenis.tex (c:/texlive/2025/texmf-dist/tex/latex/cmbright/ot1cmbr.fd) (c:/texlive/2025/texmf-dist/tex/latex/cmbright/omlcmbrm.fd) (c:/texlive/2025/texmf-dist/tex/latex/cmbright/omscmbrs.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-bch.cfg) (c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1ptm.fd) (c:/texlive/2025/texmf-dist/tex/latex/microtype/mt-ptm.cfg) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd) (c:/texlive/2025/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd))
+Package cleveref Info: loaded `dutch' language definitions on input line 37.
 LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <10.95> not available
-(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 35.
+(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 37.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.35 \include{versiegeschidenis}
-                                 [1
+l.37 \include{hoofdstukken/versiegeschidenis}
+                                              [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <24.88> not available
-(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 39.
+(Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 41.
  (./main.toc
 Package cleveref Info: loaded `dutch' language definitions on input line 1.
 )
@@ -1881,16 +1881,16 @@ Package cleveref Info: loaded `dutch' language definitions on input line 1.
 \openout6 = `main.toc'.
 
 Package babel Info: 'dutch' activates 'dutch' shorthands.
-(babel)             Reported on input line 42.
-Package cleveref Info: loaded `dutch' language definitions on input line 42.
+(babel)             Reported on input line 44.
+Package cleveref Info: loaded `dutch' language definitions on input line 44.
  [2
 
 
 
 ]
-\openout2 = `hooftstuk_1.aux'.
+\openout2 = `hoofdstukken/hooftstuk_1.aux'.
 
- (./hooftstuk_1.tex
+ (./hoofdstukken/hooftstuk_1.tex
 Hoofdstuk 1.
 LaTeX Font Info:    Font shape `T1/cmbr/b/n' in size <45.64172> not available
 (Font)              Font shape `T1/cmbr/bx/n' tried instead on input line 1.
@@ -1923,15 +1923,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--141
  []
 
 )
-Package cleveref Info: loaded `dutch' language definitions on input line 45.
+Package cleveref Info: loaded `dutch' language definitions on input line 47.
  [4]
-\openout2 = `hoofdstuk_2.aux'.
+\openout2 = `hoofdstukken/hoofdstuk_2.aux'.
 
- (./hoofdstuk_2.tex
+ (./hoofdstukken/hoofdstuk_2.tex
 Hoofdstuk 2.
 \absvshift=\dimen396
 \absvshift=\dimen397
-Package cleveref Info: loaded `dutch' language definitions on input line 47.
+Package cleveref Info: loaded `dutch' language definitions on input line 48.
 [5
 
 
@@ -1939,91 +1939,167 @@ Package cleveref Info: loaded `dutch' language definitions on input line 47.
 
 ]
 \absvshift=\dimen398
-Package cleveref Info: loaded `dutch' language definitions on input line 99.
+Package cleveref Info: loaded `dutch' language definitions on input line 101.
  [6]
-Package cleveref Info: loaded `dutch' language definitions on input line 141.
- [7])
-Package cleveref Info: loaded `dutch' language definitions on input line 46.
+Package cleveref Info: loaded `dutch' language definitions on input line 145.
+ [7]
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 189.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 189.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 189.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 189.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 189.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 189.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 189.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 189.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 189.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 189.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 189.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 189.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 10.51207pt on input line 189.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.68005pt on input line 189.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 5.76004pt on input line 189.
+)
+Package cleveref Info: loaded `dutch' language definitions on input line 48.
  [8]
-\openout2 = `hoofdstuk_3.aux'.
+Package cleveref Info: loaded `dutch' language definitions on input line 48.
+ [9]
+\openout2 = `hoofdstukken/hoofdstuk_3.aux'.
 
- (./hoofdstuk_3.tex
+ (./hoofdstukken/hoofdstuk_3.tex
 Hoofdstuk 3.
-Package cleveref Info: loaded `dutch' language definitions on input line 32.
-[9
+<afbeeldingen/IMG-20260316-WA0006.jpg, id=167, 831.105pt x 546.04pt>
+File: afbeeldingen/IMG-20260316-WA0006.jpg Graphic file (type jpg)
+<use afbeeldingen/IMG-20260316-WA0006.jpg>
+Package pdftex.def Info: afbeeldingen/IMG-20260316-WA0006.jpg  used on input line 23.
+(pdftex.def)             Requested size: 208.41644pt x 136.92625pt.
+Package cleveref Info: loaded `dutch' language definitions on input line 39.
+[10
 
 
 
 
 ]
-Package cleveref Info: loaded `dutch' language definitions on input line 83.
- [10])
-Package cleveref Info: loaded `dutch' language definitions on input line 47.
- [11]
-\openout2 = `hoofdstuk_4.aux'.
+Package cleveref Info: loaded `dutch' language definitions on input line 80.
+ [11 <./afbeeldingen/IMG-20260316-WA0006.jpg>]
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 93.
+LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
+(Font)              scaled to size 7.10403pt on input line 93.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 93.
+LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
+(Font)              scaled to size 7.10403pt on input line 93.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 93.
+LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
+(Font)              scaled to size 7.10403pt on input line 93.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 93.
+LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
+(Font)              scaled to size 7.10403pt on input line 93.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 9.60007pt on input line 93.
+LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
+(Font)              scaled to size 7.10403pt on input line 93.
+Package cleveref Info: loaded `dutch' language definitions on input line 125.
+ [12]
+<afbeeldingen/IMG-20260316-WA0011.jpg, id=194, 829.0975pt x 555.07375pt>
+File: afbeeldingen/IMG-20260316-WA0011.jpg Graphic file (type jpg)
+<use afbeeldingen/IMG-20260316-WA0011.jpg>
+Package pdftex.def Info: afbeeldingen/IMG-20260316-WA0011.jpg  used on input line 140.
+(pdftex.def)             Requested size: 208.41644pt x 139.53036pt.
 
- (./hoofdstuk_4.tex
+pdfTeX warning (ext4): destination with the same identifier (name{Hfootnote.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.151 er een hoger vermogen werd verwacht.}
+                                           
+Package cleveref Info: loaded `dutch' language definitions on input line 172.
+ [13 <./afbeeldingen/IMG-20260316-WA0011.jpg>])
+Package cleveref Info: loaded `dutch' language definitions on input line 49.
+ [14]
+\openout2 = `hoofdstukken/hoofdstuk_4.aux'.
+
+ (./hoofdstukken/hoofdstuk_4.tex
 Hoofdstuk 4.
 Package cleveref Info: loaded `dutch' language definitions on input line 37.
-[12
+[15
 
 
 
 
 ]
+<afbeeldingen/IMG-20260326-WA0006.jpg, id=221, 1027.84pt x 602.25pt>
+File: afbeeldingen/IMG-20260326-WA0006.jpg Graphic file (type jpg)
+<use afbeeldingen/IMG-20260326-WA0006.jpg>
+Package pdftex.def Info: afbeeldingen/IMG-20260326-WA0006.jpg  used on input line 55.
+(pdftex.def)             Requested size: 208.41644pt x 122.11118pt.
+Package cleveref Info: loaded `dutch' language definitions on input line 79.
+ [16 <./afbeeldingen/IMG-20260326-WA0006.jpg>]
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 68.
-LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 68.
+(Font)              scaled to size 16.58891pt on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 68.
-LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 68.
+(Font)              scaled to size 16.58891pt on input line 79.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 68.
-LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 68.
+(Font)              scaled to size 16.58891pt on input line 79.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 68.
-LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 68.
+(Font)              scaled to size 16.58891pt on input line 79.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 16.58891pt on input line 68.
-LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 68.
+(Font)              scaled to size 16.58891pt on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 68.
+(hyperref)                removing `\Delta' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 68.
+(hyperref)                removing `\Delta' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 79.
 
-Package cleveref Info: loaded `dutch' language definitions on input line 86.
-[13]
-Package cleveref Info: loaded `dutch' language definitions on input line 127.
- [14])
-Package cleveref Info: loaded `dutch' language definitions on input line 48.
- [15]
+Package cleveref Info: loaded `dutch' language definitions on input line 130.
+[17])
+Package cleveref Info: loaded `dutch' language definitions on input line 50.
+ [18]
 
-LaTeX Warning: Empty bibliography on input line 51.
+LaTeX Warning: Empty bibliography on input line 53.
 
-(./main.aux (./titelpagina.aux)
+(./main.aux (./hoofdstukken/titelpagina.aux)
 Package cleveref Info: loaded `dutch' language definitions on input line 11.
- (./versiegeschidenis.aux) (./hooftstuk_1.aux) (./hoofdstuk_2.aux) (./hoofdstuk_3.aux) (./hoofdstuk_4.aux))
+ (./hoofdstukken/versiegeschidenis.aux) (./hoofdstukken/hooftstuk_1.aux) (./hoofdstukken/hoofdstuk_2.aux) (./hoofdstukken/hoofdstuk_3.aux) (./hoofdstukken/hoofdstuk_4.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -2035,18 +2111,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81387 strings out of 467532
- 2024851 string characters out of 5423649
- 3210032 words of memory out of 5000000
- 109017 multiletter control sequences out of 15000+600000
- 663415 words of font info for 153 fonts, out of 8000000 for 9000
+ 81598 strings out of 467532
+ 2030966 string characters out of 5423649
+ 3212622 words of memory out of 5000000
+ 109171 multiletter control sequences out of 15000+600000
+ 682859 words of font info for 216 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,14n,135p,1503b,2090s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7m.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb>
-Output written on main.pdf (18 pages, 195156 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbrsy9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7m.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbmr9.pfb>
+Output written on main.pdf (21 pages, 503315 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 34002 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 52449 words of extra memory for PDF output out of 61914 (max. 10000000)
 
