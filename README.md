@@ -1,0 +1,34 @@
+Deze instellingen zijn gebazeerd op de instellingen die gebruikt worden door de Hogeschool Rotterdam Elektrotechniek. 
+Hier onder staan de macro's die nodig zijn voor het gebruik van deze style: http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/etoolbox/etoolbox.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/geometry/geometry.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/required/psnfss/psnfss2e.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/fonts/inconsolata/doc/inconsolata-doc.pdf 
+http://ctan.cs.uu.nl/macros/latex/contrib/url/url.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/required/amslatex/math/amsldoc.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/mathtools/mathtools.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/xcolor/xcolor.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/caption/newfloat.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/mdframed/mdframed.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/required/babel/base/babel.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/titlesec/titlesec.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/footmisc/footmisc.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/fancyhdr/fancyhdr.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/parskip/parskip-doc.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/required/graphics/grfguide.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/required/tools/array.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/required/tools/longtable.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/multirow/doc/multirow.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/adjustbox/adjustbox.pdf 
+http://ctan.cs.uu.nl/macros/latex/contrib/float/float.pdf 
+http://ctan.triasinformatica.nl/macros/latex/contrib/siunitx/siunitx.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/caption/caption-eng.pdf 
+http://get-software.net/macros/latex/contrib/nowidow/nowidow.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/csquotes/csquotes.pdf 
+http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/enumitem/enumitem.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/footnotebackref/footnotebackref.pdf 
+http://tex.stackexchange.com/questions/78423/how-to-use-the-footnotebackref-package-with-footnotemark-and-footnotetext 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/microtype/microtype.pdf 
+http://archive.cs.uu.nl/mirror/CTAN/macros/latex/contrib/hyperref/doc/manual.pdf 
+http://ctan.triasinformatica.nl/systems/doc/pdftex/manual/pdftex-a.pdf#page=24 
+http://ctan.cs.uu.nl/macros/latex/contrib/cleveref/cleveref.pdf
