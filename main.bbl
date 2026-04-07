@@ -1,0 +1,110 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{triac}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=989b111860eb09728cb83bdb8cc35f0e}{%
+           family={electrical4u},
+           familyi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{fullhash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{fullhashraw}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{bibnamehash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{authorbibnamehash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{authornamehash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{authorfullhash}{989b111860eb09728cb83bdb8cc35f0e}
+      \strng{authorfullhashraw}{989b111860eb09728cb83bdb8cc35f0e}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TRIAC: What is it? (Definition, Operation and Applications)}
+      \verb{urlraw}
+      \verb https://www.electrical4u.com/triac/
+      \endverb
+      \verb{url}
+      \verb https://www.electrical4u.com/triac/
+      \endverb
+      \keyw{triacding}
+    \endentry
+    \entry{leerboek}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=406fe3c29a56375abd5f789331125f12}{%
+           family={Hambley},
+           familyi={H\bibinitperiod},
+           given={Allan\bibnamedelima R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {pearson}%
+      }
+      \strng{namehash}{406fe3c29a56375abd5f789331125f12}
+      \strng{fullhash}{406fe3c29a56375abd5f789331125f12}
+      \strng{fullhashraw}{406fe3c29a56375abd5f789331125f12}
+      \strng{bibnamehash}{406fe3c29a56375abd5f789331125f12}
+      \strng{authorbibnamehash}{406fe3c29a56375abd5f789331125f12}
+      \strng{authornamehash}{406fe3c29a56375abd5f789331125f12}
+      \strng{authorfullhash}{406fe3c29a56375abd5f789331125f12}
+      \strng{authorfullhashraw}{406fe3c29a56375abd5f789331125f12}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780137562855}
+      \field{series}{Pearson Series in Electrical Engineering}
+      \field{title}{Electrical Engineering: Principles and Applications}
+      \field{year}{2019}
+      \keyw{lesboek}
+    \endentry
+    \entry{thyristor}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=dbe6d9f98cd129a4856753f0f1129244}{%
+           family={Woodford},
+           familyi={W\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{fullhash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{fullhashraw}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{bibnamehash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{authorbibnamehash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{authornamehash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{authorfullhash}{dbe6d9f98cd129a4856753f0f1129244}
+      \strng{authorfullhashraw}{dbe6d9f98cd129a4856753f0f1129244}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thyristors}
+      \verb{urlraw}
+      \verb https://www.explainthatstuff.com/how-thyristors-work.html
+      \endverb
+      \verb{url}
+      \verb https://www.explainthatstuff.com/how-thyristors-work.html
+      \endverb
+      \keyw{thyristording}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

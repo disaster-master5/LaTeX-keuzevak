@@ -2,12 +2,13 @@
 \contentsline {chapter}{\numberline {1}Vermogen en blindvermogen}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Vermogensdriehoek}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Impendantie driehoek}{4}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Transformatoren}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Nullastproef}{7}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Kortsluit proef}{7}{section.2.2}%
-\contentsline {chapter}{\numberline {3}TRIAC en tryristor}{10}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tryristor}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}TRIAC}{12}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Driefasen}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Y-Y configuratie}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}$\Delta -\Delta $ configuratie}{17}{section.4.2}%
+\contentsline {chapter}{\numberline {2}Transformatoren}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Nullastproef}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Kortsluit proef}{8}{section.2.2}%
+\contentsline {chapter}{\numberline {3}TRIAC en tryristor}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tryristor}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}TRIAC}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Driefasen}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Y-Y configuratie}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}$\Delta -\Delta $ configuratie}{18}{section.4.2}%
+\contentsline {chapter}{Bibliografie}{20}{chapter*.11}%

@@ -732,6 +732,11 @@ INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT c:/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 OUTPUT main.bcf
+INPUT main.bbl
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT ./main.bbl
+INPUT main.bbl
 INPUT c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT c:/texlive/2025/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT ./main.out
@@ -834,6 +839,14 @@ OUTPUT main.toc
 INPUT c:/texlive/2025/texmf-dist/fonts/vf/public/mathdesign/mdbch/mdbchr7m.vf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr7m.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr8y.tfm
+INPUT ./main.lof
+INPUT ./main.lof
+INPUT main.lof
+OUTPUT main.lof
+INPUT ./main.lot
+INPUT ./main.lot
+INPUT main.lot
+OUTPUT main.lot
 INPUT ./hoofdstukken/hooftstuk_1.tex
 INPUT ./hoofdstukken/hooftstuk_1.tex
 OUTPUT hoofdstukken/hooftstuk_1.aux
@@ -963,6 +976,11 @@ INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr8y.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/vf/public/mathdesign/mdbch/mdbchr7m.vf
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr7m.tfm
 INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/mathdesign/mdbch/md-chr8y.tfm
+INPUT c:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT c:/texlive/2025/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+INPUT c:/texlive/2025/texmf-dist/fonts/tfm/public/inconsolata/t1-zi4r-4.tfm
+INPUT c:/texlive/2025/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc
 INPUT main.aux
 INPUT ./hoofdstukken/titelpagina.aux
 INPUT ./hoofdstukken/titelpagina.aux
@@ -986,6 +1004,7 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT main.run.xml
 OUTPUT main.run.xml
+INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb
 INPUT c:/texlive/2025/texmf-dist/fonts/type1/public/hfbright/hfbr9.pfb
